@@ -1,0 +1,106 @@
+/* CSS STRUCTURE:
+
+1. VARIABLES
+2. GENERAL TYPOGRAPHY
+
+----------------------------------------------------- */
+
+/* General styles
+------------------------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  --heading-font: "Poppins", sans-serif;
+  --heading-font-weight: 700;
+  --heading-color: #ffffff;
+  --accent-color: #ff9c18;
+  --background-color: #ffffff;
+}
+section {
+  background-color: #000000;
+}
+.header-top {
+  color: var(--heading-color);
+  text-transform: uppercase;
+  font-size: 1.47rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.28125rem;
+}
+.header-top-2 {
+  text-transform: uppercase;
+  letter-spacing: 12px;
+}
+.heading-3 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--heading-color);
+}
+.heading-4 {
+  text-transform: capitalize;
+  font-size: 1 rem;
+  font-weight: 400;
+  color: var(--heading-color);
+}
+h1,
+.h1,
+.display-1 {
+  letter-spacing: -1px;
+  font-size: 7.1rem;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+h2,
+.h2,
+.display-2 {
+  letter-spacing: -1px;
+  font-size: 3.73rem;
+  font-weight: 800;
+  line-height: 0.9;
+  color: var(--accent-color);
+}
+@media only screen and (max-width: 1300px) {
+  h1,
+  .h1,
+  .display-1 {
+    font-size: 4.9rem;
+  }
+}
+@media only screen and (max-width: 620px) {
+  h1,
+  .h1,
+  .display-1 {
+    font-size: 3rem;
+  }
+}
+
+.button {
+  width: max-content;
+  border-radius: 0%;
+}
+
+.about-content {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.padding-medium {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.artist-img {
+  width: 200px;
+  padding-bottom: 50px;
+}
