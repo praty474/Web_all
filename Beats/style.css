@@ -17,6 +17,7 @@
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -25,8 +26,9 @@ body {
   --heading-color: #ffffff;
   --accent-color: #ff9c18;
   --background-color: #ffffff;
+  --bar-color: #e85d04;
 }
-section {
+section, footer{
   background-color: #000000;
 }
 .header-top {
@@ -103,4 +105,34 @@ h2,
 .artist-img {
   width: 200px;
   padding-bottom: 50px;
+}
+
+.input {
+  background-color: transparent;
+  color: var(--background-color);
+  border: none;
+  border-bottom: var(--background-color) solid 2px;
+  width: 30vw;
+}
+.input::placeholder {
+  color: var(--background-color);
+}
+.input:focus {
+  outline: none;
+  border: none;
+  border-bottom: var(--background-color) solid 2px;
+}
+
+
+
+
+/* list  */
+
+ul{
+list-style: none;
+padding: 0;
+}
+a{
+  text-decoration: none;
+  color: var(--background-color);
 }
