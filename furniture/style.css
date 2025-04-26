@@ -19,6 +19,7 @@
    - Testimonials
 7. UTILITIES
 8. MEDIA QUERIES
+9. FOOTER STYLES
 
 ----------------------------------------------------- */
 
@@ -917,5 +918,118 @@ h6 {
 
   .testimonial-text {
     font-size: 0.95rem;
+  }
+}
+
+/* 9. FOOTER STYLES
+------------------------------------------------------------------------------------------- */
+.footer-section {
+  background-color: var(--color-lighter);
+  color: var(--color-black);
+}
+
+.footer-widget {
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo {
+  max-width: 120px;
+}
+
+.footer-title {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+.footer-links a {
+  color: var(--color-gray);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: var(--color-primary);
+}
+
+.footer-contact li {
+  color: var(--color-gray);
+  font-size: 0.95rem;
+}
+
+.footer-contact iconify-icon {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  transition: all var(--transition-fast);
+}
+
+.social-icon:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-3px);
+}
+
+.newsletter .form-control {
+  border-radius: var(--border-radius-lg) 0 0 var(--border-radius-lg);
+  border: 1px solid var(--color-gray-lighter);
+  padding: 0.6rem 1rem;
+}
+
+.newsletter .btn {
+  border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0;
+  background-color: var(--color-primary);
+  border: none;
+  padding: 0.6rem 1.2rem;
+}
+
+.newsletter .btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.footer-bottom {
+  color: var(--color-gray);
+  font-size: 0.9rem;
+}
+
+.payment-methods img {
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .footer-widget {
+    margin-bottom: 2rem;
+  }
+
+  .footer-title {
+    margin-top: 1rem;
   }
 }
