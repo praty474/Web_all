@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!--Bootstrap ================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- Style Sheet ================================================== -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Fonts ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg container-fluid text-center">
+        <div class="container">
+            <div class="d-flex align-items-center w-100">
+                <a class="navbar-brand me-auto" href="index.html">
+                    <img src="images/logo.png" class="img-fluid" width="100" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <iconify-icon icon="icon-park-outline:hamburger-button" style="color: black"></iconify-icon>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mx-auto align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase active mx-2 px-3 mb-2 mb-lg-0" aria-current="page"
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase mx-2 px-3 mb-2 mb-lg-0" href="#price">booking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase mx-2 px-3 mb-2 mb-lg-0" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase mx-2 px-3 mb-2 mb-lg-0" href="#blog">blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase mx-2 px-3 mb-2 mb-lg-0" href="#project">gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase mx-2 px-3 mb-2 mb-lg-0" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- -------------------------------end of nav bar--------------------------------------- -->
+    <!-- hero section  -->
+    <section class="pt-3 ms-5 me-5 hero-section">
+        <div class="">
+            <div class="row">
+                <div class="col-md">
+                    <!-- image-banner  -->
+                    <img src="images/img.png" class="img-fluid " width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------end of hero section-------------------- -->
+
+    <!-- services section  -->
+    <div class="section">
+
+        <div class="container py-5">
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-3">
+                    <div class="feature-card">
+                        <div class="icon-blob">
+                            <iconify-icon icon="bxs:cart" style="height: 48px; width: 48px;"></iconify-icon>
+                        </div>
+                        <div class="feature-text">Easy for Shopping</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="feature-card">
+                        <div class="icon-blob">
+
+                            <iconify-icon icon="iconamoon:delivery-fast-fill"
+                                style="height: 48px; width: 48px;"></iconify-icon>
+
+                        </div>
+                        <div class="feature-text">Fast & Free Shipping</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="feature-card">
+                        <div class="icon-blob">
+                            <iconify-icon icon="streamline:customer-support-1-solid"
+                                style="height: 48px; width: 48px;"></iconify-icon>
+                        </div>
+                        <div class="feature-text">24/7 Support</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="feature-card">
+                        <div class="icon-blob">
+                            <iconify-icon icon="fluent-mdl2:money" style="height: 48px; width: 48px;"></iconify-icon>
+                        </div>
+                        <div class="feature-text">Money Back Guarantee</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------end of section----------------------------------- -->
+
+    <!-- -------------------------------section-2-------------------------------- -->
+    <section class="section-bg p-5">
+
+        <div class="row g-4 align-items-center">
+
+            <!-- Image Card -->
+            <div class="col-md-6">
+                <div class="image-card">
+                    <img src="images/chair.jpg" alt="Furniture Image">
+                </div>
+            </div>
+
+            <!-- Text Card -->
+            <div class="col-md-6 p-5">
+                <div class="text-card">
+                    <h6 class="pt-5">Furniture Design Ideas</h6>
+                    <p class="pt-5 me-5">Lorem ipsum dolor sit amet consectetur. Eget molestie odio in nec felis
+                        scelerisque consequat odio in nec felis scelerisque consequat
+                        egestas. Magna felis ultrices volutpat tincidunt leo arcu.</p>
+                    <button class="btn-custom mt-5 mb-5">Shop Now</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- --------------------------end----------------------------------- -->
+
+
+
+    <!-- -------------section3------------------ -->
+    <section>
+        <div class="row g-4 m-0 p-5">
+            <!-- Table Card -->
+            <div class="col-md-7">
+                <div class="card border-0 rounded-5  h-100">
+                    <div class="card-body p-4 position-relative">
+                        <div class="content-wrapper">
+                            <span class="badge bg-white text-dark rounded-pill mb-3">
+                                <span class="fw-bold text-primary">1230+ </span>Item
+                            </span>
+                            <h2 class="fw-bold mb-4">Table</h2>
+                            <div class="text-muted mb-4 category-list">
+                                <div>folding table</div>
+                                <div>desk</div>
+                                <div>dining table</div>
+                                <div>coffee table</div>
+                            </div>
+                            <div class="view-all-wrapper">
+                                <a href="#" class="text-decoration-none text-primary d-inline-flex align-items-center">
+                                    View All
+                                    <svg class="ms-2" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-image-wrapper">
+                            <img src="images/table.png" alt="Wooden Table" class="product-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chairs Card -->
+            <div class="col-md-5">
+                <div class="card border-0 rounded-5 h-100" style="background-color: #e8f1f3;">
+                    <div class="card-body p-4 position-relative">
+                        <div class="content-wrapper">
+                            <span class="badge bg-white text-dark rounded-pill mb-3">
+                                <span class="fw-bold text-primary">1230+ </span>Item
+                            </span>
+                            <h2 class="fw-bold mb-4">Chairs</h2>
+                            <div class="text-muted mb-4 category-list">
+                                <div>gaming chair</div>
+                                <div>lounge chair</div>
+                                <div>office chair</div>
+                                <div>adirondack chair</div>
+                            </div>
+                            <div class="view-all-wrapper">
+                                <a href="#" class="text-decoration-none text-primary d-inline-flex align-items-center">
+                                    View All
+                                    <svg class="ms-2" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-image-wrapper">
+                            <img src="images/bluechair.png" alt="Blue Velvet Chair" class="product-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Light Card -->
+            <div class="col-md-4 ">
+                <div class="card border-0 rounded-5 h-100" style="background-color: #fff5eb;">
+                    <div class="card-body p-4 position-relative">
+                        <div class="content-wrapper">
+                            <span class="badge bg-white text-dark rounded-pill mb-3">
+                                <span class="fw-bold text-primary">1230+ </span>Item
+                            </span>
+                            <h2 class="fw-bold mb-4">Light</h2>
+                            <div class="text-muted mb-4 category-list">
+                                <div>chandelier</div>
+                                <div>lantern pendant</div>
+                                <div>multi-light pendant</div>
+                                <div>pendant light</div>
+                            </div>
+                            <div class="view-all-wrapper ">
+                                <a href="#" class="text-decoration-none text-primary d-inline-flex align-items-center">
+                                    View All
+                                    <svg class="ms-2" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-image-wrapper">
+                            <img src="images/light.png" alt="Gold Pendant Light" class="product-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Discount Card -->
+            <div class="col-md-3">
+                <div class="card border-0 rounded-5 h-100 discount-card">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center p-4">
+                        <button class="btn btn-warning rounded-pill px-4 py-2 mb-3">GET DISCOUNT</button>
+                        <h2 class="text-white text-center mb-0">30% OFFER</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ------end------  -->
+
+
+    <!-- product section  -->
+
+    <section class="product-section mt-5 ">
+        <div class="container mt-4">
+            <!-- Navigation Tabs -->
+            <ul class="nav nav-tabs border-0 mb-4 justify-content-start">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-category="dining">Dining Room</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" data-category="drawing">Drawing Room</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-category="bed">Bed Room</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-category="kitchen">Kitchen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-category="outdoor">Outdoor</a>
+                </li>
+            </ul>
+
+            <!-- Product Grids -->
+            <div class="product-grid active" id="drawing">
+                <div class="row g-4">
+                    <!-- Product 1 -->
+                    <div class="col-md-4">
+                        <div class="card ">
+                            <div class="position-relative">
+                                <span class="discount-badge">-10%</span>
+                                <iconify-icon class="wishlist-icon" icon="mdi:heart-outline"></iconify-icon>
+                                <img src="images/sofa-white.png" class="product-image w-100" alt="White Fabric Sofa">
+                            </div>
+                            <div class="product-info d-flex justify-content-between align-items-center ">
+                                <div>
+                                    <h5 class="mb-1">White Fabric Sofa</h5>
+                                    <p class="mb-0">$ 112.00</p>
+                                </div>
+                                <button class="add-to-cart">
+                                    <iconify-icon icon="mdi:cart"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="col-md-4">
+                        <div class="card ">
+                            <div class="position-relative">
+                                <span class="discount-badge">-10%</span>
+                                <iconify-icon class="wishlist-icon" icon="mdi:heart-outline"></iconify-icon>
+                                <img src="images/sofa-brown.png" class="product-image w-100" alt="White Fabric Sofa">
+                            </div>
+                            <div class="product-info d-flex justify-content-between align-items-center ">
+                                <div>
+                                    <h5 class="mb-1">White Fabric Sofa</h5>
+                                    <p class="mb-0">$ 112.00</p>
+                                </div>
+                                <button class="add-to-cart">
+                                    <iconify-icon icon="mdi:cart"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="col-md-4">
+                        <div class="card ">
+                            <div class="position-relative">
+                                <span class="discount-badge">-10%</span>
+                                <iconify-icon class="wishlist-icon" icon="mdi:heart-outline"></iconify-icon>
+                                <img src="images/sofa-yellow.png" class="product-image w-100" alt="White Fabric Sofa">
+                            </div>
+                            <div class="product-info d-flex justify-content-between align-items-center ">
+                                <div>
+                                    <h5 class="mb-1">White Fabric Sofa</h5>
+                                    <p class="mb-0">$ 112.00</p>
+                                </div>
+                                <button class="add-to-cart">
+                                    <iconify-icon icon="mdi:cart"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="col-md-4">
+                        <div class="card ">
+                            <div class="position-relative">
+                                <span class="discount-badge">-10%</span>
+                                <iconify-icon class="wishlist-icon" icon="mdi:heart-outline"></iconify-icon>
+                                <img src="images/bluechair.png" class="product-image w-100" alt="White Fabric Sofa">
+                            </div>
+                            <div class="product-info d-flex justify-content-between align-items-center ">
+                                <div>
+                                    <h5 class="mb-1">White Fabric Sofa</h5>
+                                    <p class="mb-0">$ 112.00</p>
+                                </div>
+                                <button class="add-to-cart">
+                                    <iconify-icon icon="mdi:cart"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="col-md-4">
+                        <div class="card ">
+                            <div class="position-relative">
+                                <span class="discount-badge">-10%</span>
+                                <iconify-icon class="wishlist-icon" icon="mdi:heart-outline"></iconify-icon>
+                                <img src="images/table.png" class="product-image w-100" alt="White Fabric Sofa">
+                            </div>
+                            <div class="product-info d-flex justify-content-between align-items-center ">
+                                <div>
+                                    <h5 class="mb-1">White Fabric Sofa</h5>
+                                    <p class="mb-0">$ 112.00</p>
+                                </div>
+                                <button class="add-to-cart">
+                                    <iconify-icon icon="mdi:cart"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="col-md-4">
+                        <div class="card ">
+                            <div class="position-relative">
+                                <span class="discount-badge">-10%</span>
+                                <iconify-icon class="wishlist-icon" icon="mdi:heart-outline"></iconify-icon>
+                                <img src="images/sofa-brown.png" class="product-image w-100" alt="White Fabric Sofa">
+                            </div>
+                            <div class="product-info d-flex justify-content-between align-items-center ">
+                                <div>
+                                    <h5 class="mb-1">White Fabric Sofa</h5>
+                                    <p class="mb-0">$ 112.00</p>
+                                </div>
+                                <button class="add-to-cart">
+                                    <iconify-icon icon="mdi:cart"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- More products... -->
+                </div>
+            </div>
+
+            <div class="product-grid" id="dining">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="position-relative">
+                                <span class="discount-badge">-10%</span>
+                                <iconify-icon class="wishlist-icon" icon="mdi:heart-outline"></iconify-icon>
+                                <img src="images/sofa-brown.png" class="product-image w-100" alt="Dining Chair">
+                            </div>
+                            <div class="product-info d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1">Dining Chair</h5>
+                                    <p class="mb-0">$ 112.00</p>
+                                </div>
+                                <button class="add-to-cart">
+                                    <iconify-icon icon="mdi:cart"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Copy other two product cards with dining room items -->
+                </div>
+            </div>
+
+            <div class="product-grid" id="bed">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="position-relative">
+                                <span class="discount-badge">-10%</span>
+                                <iconify-icon class="wishlist-icon" icon="mdi:heart-outline"></iconify-icon>
+                                <img src="images/sofa-brown.png" class="product-image w-100" alt="Bed Frame">
+                            </div>
+                            <div class="product-info d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1">Bed Frame</h5>
+                                    <p class="mb-0">$ 112.00</p>
+                                </div>
+                                <button class="add-to-cart">
+                                    <iconify-icon icon="mdi:cart"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Copy other two product cards with bedroom items -->
+                </div>
+            </div>
+
+            <div class="product-grid" id="kitchen">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="position-relative">
+                                <span class="discount-badge">-10%</span>
+                                <iconify-icon class="wishlist-icon" icon="mdi:heart-outline"></iconify-icon>
+                                <img src="images/sofa-brown.png" class="product-image w-100" alt="Kitchen Cabinet">
+                            </div>
+                            <div class="product-info d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1">Kitchen Cabinet</h5>
+                                    <p class="mb-0">$ 112.00</p>
+                                </div>
+                                <button class="add-to-cart">
+                                    <iconify-icon icon="mdi:cart"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Copy other two product cards with kitchen items -->
+                </div>
+            </div>
+
+            <div class="product-grid" id="outdoor">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="position-relative">
+                                <span class="discount-badge">-10%</span>
+                                <iconify-icon class="wishlist-icon" icon="mdi:heart-outline"></iconify-icon>
+                                <img src="images/sofa-brown.png" class="product-image w-100" alt="Garden Chair">
+                            </div>
+                            <div class="product-info d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1">Garden Chair</h5>
+                                    <p class="mb-0">$ 112.00</p>
+                                </div>
+                                <button class="add-to-cart">
+                                    <iconify-icon icon="mdi:cart"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Copy other two product cards with outdoor items -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of product section  -->
+
+    <!-- sale section  -->
+    <section class="sale-section mt-5">
+        <div class="banner-container">
+            <div class="super-sale">
+                <div class="price-section">
+                    <span class="original-price">$550</span>
+                    <div class="sale-price">$399.00</div>
+                </div>
+                <div class="sale-content">
+                    <h1 class="sale-title">Super Sale!</h1>
+                    <p class="sale-subtitle">Get 50% Off. Limited Time Offer!</p>
+                    <div class="countdown">
+                        <div>
+                            <div class="countdown-item" id="days">05</div>
+                            <div class="countdown-label">Days</div>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div>
+                            <div class="countdown-item" id="hours">15</div>
+                            <div class="countdown-label">Hours</div>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div>
+                            <div class="countdown-item" id="minutes">20</div>
+                            <div class="countdown-label">Mins</div>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div>
+                            <div class="countdown-item" id="seconds">25</div>
+                            <div class="countdown-label">Secs</div>
+                        </div>
+                    </div>
+                    <img src="images/sofa-brown.png" alt="Brown Leather Sofa" class="product-image">
+
+                    <button class="shop-now-btn">Shop Now</button>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="images/background.jpg" alt="Grey Sofa with Teal Pillow">
+            </div>
+            <div class="image-card">
+                <img src="images/background2.jpg" alt="Grey Sofa with Cat">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- best-selling section  -->
+    <section class=" best-selling-section mt-5">
+        <!-- Best Selling Products Section -->
+        <div class="p-5 best-selling">
+            <h2 class="section-title">Our Best Selling<br>Product</h2>
+            <div class="product-slider position-relative">
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-outline-primary me-2 btn-next" id="prev-products-btn"
+                        style="height: 40px; width: 40px; border-radius: 50%;"><iconify-icon
+                            icon="material-symbols:chevron-left"></iconify-icon></button>
+                    <div class="flex-grow-1">
+                        <div class="row g-3" id="product-row">
+                            <!-- Product Set 1 (default) -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="discount-badge">-10% OFF</span>
+                                    <img src="images/bluechair.png" alt="Luxury Sofa" class="product-img mt-5">
+                                    <div class="product-info">
+                                        <div class="product-title-row">
+                                            <h3 class="product-title">Luxury Sofa</h3>
+                                            <div class="rating">
+                                                <iconify-icon class="rating-star"
+                                                    icon="material-symbols:star"></iconify-icon>
+                                                <span class="rating-number">4.9</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price-row">
+                                            <div class="product-price">
+                                                <span class="current-price">$230.00</span>
+                                                <span class="original-price-product">$250.00</span>
+                                            </div>
+                                            <span class="delivery-info">• 2 days delivery</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="discount-badge">-10% OFF</span>
+                                    <img src="images/bluechair.png" alt="Luxury Sofa" class="product-img mt-5">
+                                    <div class="product-info">
+                                        <div class="product-title-row">
+                                            <h3 class="product-title">Luxury Sofa</h3>
+                                            <div class="rating">
+                                                <iconify-icon class="rating-star"
+                                                    icon="material-symbols:star"></iconify-icon>
+                                                <span class="rating-number">4.9</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price-row">
+                                            <div class="product-price">
+                                                <span class="current-price">$230.00</span>
+                                                <span class="original-price-product">$250.00</span>
+                                            </div>
+                                            <span class="delivery-info">• 2 days delivery</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="discount-badge">-10% OFF</span>
+                                    <img src="images/bluechair.png" alt="Luxury Sofa" class="product-img mt-5">
+                                    <div class="product-info">
+                                        <div class="product-title-row">
+                                            <h3 class="product-title">Luxury Sofa</h3>
+                                            <div class="rating">
+                                                <iconify-icon class="rating-star"
+                                                    icon="material-symbols:star"></iconify-icon>
+                                                <span class="rating-number">4.9</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price-row">
+                                            <div class="product-price">
+                                                <span class="current-price">$230.00</span>
+                                                <span class="original-price-product">$250.00</span>
+                                            </div>
+                                            <span class="delivery-info">• 2 days delivery</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="discount-badge">-10% OFF</span>
+                                    <img src="images/bluechair.png" alt="Luxury Sofa" class="product-img mt-5">
+                                    <div class="product-info">
+                                        <div class="product-title-row">
+                                            <h3 class="product-title">Luxury Sofa</h3>
+                                            <div class="rating">
+                                                <iconify-icon class="rating-star"
+                                                    icon="material-symbols:star"></iconify-icon>
+                                                <span class="rating-number">4.9</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price-row">
+                                            <div class="product-price">
+                                                <span class="current-price">$230.00</span>
+                                                <span class="original-price-product">$250.00</span>
+                                            </div>
+                                            <span class="delivery-info">• 2 days delivery</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-primary ms-2 btn-next" id="next-products-btn"
+                        style="height: 40px; width: 40px; border-radius: 50%; ;"><iconify-icon
+                            icon="material-symbols:chevron-right"></iconify-icon></button>
+                </div>
+                <div class="slider-dots mt-4">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="text-muted">Discover why people love shopping with us</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Testimonial 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <iconify-icon icon="mdi:format-quote-open" class="quote-icon"></iconify-icon>
+                        </div>
+                        <div class="testimonial-header d-flex align-items-center mb-4">
+                            <img src="images/customer.jpg" alt="Sarah Johnson" class="testimonial-img">
+                            <div class="ms-3">
+                                <h5 class="mb-1">Sarah Johnson</h5>
+                                <div class="rating">
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"The quality of the furniture exceeded my expectations. The delivery
+                            was prompt, and the assembly service was professional. I'm extremely satisfied with my
+                            purchase!"</p>
+                        <div class="testimonial-product">
+                            <span class="ms-2">White Fabric Sofa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <iconify-icon icon="mdi:format-quote-open" class="quote-icon"></iconify-icon>
+                        </div>
+                        <div class="testimonial-header d-flex align-items-center mb-4">
+                            <img src="images/customer.jpg" alt="Michael Chen" class="testimonial-img">
+                            <div class="ms-3">
+                                <h5 class="mb-1">Michael Chen</h5>
+                                <div class="rating">
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"The modern design and comfort of the dining chairs are perfect for
+                            our home. The customer service team was incredibly helpful in choosing the right pieces for
+                            our space."</p>
+                        <div class="testimonial-product">
+                            <span class="ms-2">Blue Velvet Chair</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <iconify-icon icon="mdi:format-quote-open" class="quote-icon"></iconify-icon>
+                        </div>
+                        <div class="testimonial-header d-flex align-items-center mb-4">
+                            <img src="images/customer.jpg" alt="Emma Davis" class="testimonial-img">
+                            <div class="ms-3">
+                                <h5 class="mb-1">Emma Davis</h5>
+                                <div class="rating">
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star" class="text-warning"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"I love how the furniture pieces complement each other. The quality
+                            is outstanding, and the prices are reasonable. Will definitely shop here again!"</p>
+                        <div class="testimonial-product">
+                            <span class="ms-2">Wooden Table</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
