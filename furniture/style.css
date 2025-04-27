@@ -144,44 +144,98 @@ h6 {
 ------------------------------------------------------------------------------------------- */
 
 /* Navigation */
-.nav-bar {
-  background-color: var(--color-white);
+.navbar {
+  padding: 1rem 0;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 .nav-link {
-  color: var(--color-black);
-  padding: var(--spacing-sm) var(--spacing-lg);
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
   position: relative;
-  transition: color var(--transition-fast);
   border: none;
-  background: none;
+  border: none;
 }
 
-.nav-link:hover {
-  color: var(--color-primary);
-  border: none;
-  background: none;
-}
-
+.nav-link:hover,
 .nav-link.active {
   color: var(--color-primary);
-  font-weight: var(--font-weight-medium);
   border: none;
-  background: none;
-  text-decoration: underline 2px var(--color-primary);
+  border: none;
 }
 
-.nav-link.active::after {
+.nav-link::after {
   content: "";
   position: absolute;
-  bottom: -2px;
-  left: var(--spacing-lg);
-  right: var(--spacing-lg);
+  width: 0;
   height: 2px;
+  bottom: 0;
+  left: 50%;
   background-color: var(--color-primary);
-  border: none;
-  background: none;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 70%;
+}
+
+.nav-icon {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-icon:hover {
   color: var(--color-primary);
+}
+
+.offcanvas {
+  background-color: #fff;
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid #eee;
+}
+
+.offcanvas-title {
+  font-weight: 600;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    margin: 1rem 0;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
 }
 
 /* Cards */
@@ -266,15 +320,15 @@ h6 {
   left: 0;
   width: 80px;
   height: 80px;
-  background: var(--color-primary-light);
-  border-radius: 70% 100% 30% 130%;
+  /* background: var(--color-primary-light); */
+  /* border-radius: 70% 100% 30% 130%; */
   z-index: 0;
 }
 
 .icon-blob iconify-icon {
   position: relative;
   z-index: 1;
-  font-size: 48px;
+  font-size: 3.2rem;
   color: var(--color-primary);
 }
 
